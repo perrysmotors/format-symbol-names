@@ -1,0 +1,24 @@
+{
+  "name" : "Format Symbol Names",
+  "identifier" : "com.gilesperry.format-symbol-names",
+  "version" : "1.0",
+  "compatibleVersion": 49,
+  "description" : "Nicely format the names of all symbol masters on the current page.",
+  "homepage": "https://github.com/perrysmotors/format-symbol-names",
+  "author" : "Giles Perry",
+  "appcast": "https://api.sketchpacks.com/v1/plugins/com.gilesperry.format-symbol-names/appcast",
+  "commands" : [
+    {
+      "script" : "format-symbol-names.js",
+      "handler" : "onRun",
+      "shortcut" : "",
+      "name" : "Format Symbol Names",
+      "identifier" : "format"
+    }
+  ],
+  "menu": {
+    "items": [
+      "format"
+    ]
+  }
+}
