@@ -3,24 +3,23 @@ function onRun(context) {
   var UI = require('sketch/ui');
 
   var page = document.selectedPage;
-  var layers = page.layers;
+  var symbols = page.layers.filter(layer => layer.type === 'SymbolMaster');
 
-  var symbolCount = 0
-
-  layers.forEach(layer => {
-    if (layer.type == 'SymbolMaster') {
-      layer.name = formatName(layer.name);
-      symbolCount++
-    }
+  symbols.forEach(symbol => {
+    symbol.name = formatName(symbol.name);
   });
 
-  if (symbolCount == 1) {
-    var message = 'Formatting applied to ' + symbolCount + ' symbol master name';
-  } else {
-    var message = 'Formatting applied to ' + symbolCount + ' symbol master names';
+  switch (symbols.length) {
+    case 0:
+      UI.message('This page does not contain any symbol masters');
+      break;
+    case 1:
+      UI.message('Name formatting applied to 1 symbol master');
+      break;
+    default:
+      UI.message('Name formatting applied to ' + symbols.length + ' symbol masters');
   }
 
-  UI.message(message);
 }
 
 ////////////////////////////////////////////////////////////////////////////////
