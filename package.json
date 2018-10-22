@@ -1,0 +1,34 @@
+{
+  "name": "format-symbol-names",
+  "description": "Nicely format the names of symbol masters, artboards or layers",
+  "author": "Giles Perry <giles@gilesperry.info> (http://gilesperry.info/)",
+  "version": "1.0.0",
+  "engines": {
+    "sketch": ">=3.0"
+  },
+  "skpm": {
+    "name": "Format Symbol Names",
+    "manifest": "src/manifest.json",
+    "main": "FormatSymbolNames.sketchplugin",
+    "assets": [
+      "assets/**/*"
+    ]
+  },
+  "scripts": {
+    "build": "skpm-build",
+    "watch": "skpm-build --watch",
+    "start": "skpm-build --watch --run",
+    "postinstall": "npm run build && skpm-link"
+  },
+  "devDependencies": {
+    "@skpm/builder": "^0.5.2"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/perrysmotors/format-symbol-names.git"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "@skpm/builder": "^0.5.2"
+  }
+}
