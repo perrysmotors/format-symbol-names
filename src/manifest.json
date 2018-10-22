@@ -1,0 +1,28 @@
+{
+  "compatibleVersion": 3,
+  "bundleVersion": 1,
+  "icon": "icon.png",
+  "commands": [
+    {
+      "name": "Format Symbol Names",
+      "identifier": "symbols",
+      "script": "./format-symbol-names.js"
+    },
+    {
+      "name": "Format Artboard Names",
+      "identifier": "artboards",
+      "script": "./format-symbol-names.js",
+      "handler": "onArtboards"
+    },
+    {
+      "name": "Format Layer Names",
+      "identifier": "layers",
+      "script": "./format-symbol-names.js",
+      "handler": "onLayers"
+    }
+  ],
+  "menu": {
+    "title": "Format Names",
+    "items": ["symbols", "artboards", "layers"]
+  }
+}

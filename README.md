@@ -4,11 +4,17 @@
 A Sketch plugin to nicely format the names of all the symbol masters on the current page.
 
 ## Features
+- Format names of symbols, artboards or selected layers
 - Changes name format to Title Case
 - Removes spaces around slashes (`/` )
 
-## Install
-Download or clone the repository, and double click `FormatSymbolNames.sketchplugin`.
+## Installation
+
+_Requires Sketch 49+_
+
+* [Download](https://github.com/perrysmotors/format-symbol-names/releases/latest) the latest release of the plugin
+* Un-zip
+* Double-click on `FormatSymbolNames.sketchplugin`
 
 or...
 
