@@ -2,7 +2,7 @@
   "name": "format-symbol-names",
   "description": "Nicely format the names of symbol masters, artboards or layers",
   "author": "Giles Perry <giles@gilesperry.info> (http://gilesperry.info/)",
-  "version": "2.0.0",
+  "version": "2.0.1",
   "engines": {
     "sketch": ">=3.0"
   },
