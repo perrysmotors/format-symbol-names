@@ -10,9 +10,7 @@ A Sketch plugin to nicely format the names of all the symbol masters on the curr
 
 ## Installation
 
-_Requires Sketch 49+_
-
-* [Download](https://github.com/perrysmotors/format-symbol-names/releases/latest) the latest release of the plugin
+* [Download](../../releases/latest/download/FormatSymbolNames.sketchplugin.zip) the latest release of the plugin
 * Un-zip
 * Double-click on `FormatSymbolNames.sketchplugin`
 
